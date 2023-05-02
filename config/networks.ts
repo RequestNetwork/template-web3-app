@@ -1,7 +1,7 @@
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 // Networks
 // -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
-import { arbitrum, arbitrumGoerli, baseGoerli, goerli, hardhat, mainnet, optimism, optimismGoerli, polygon, sepolia } from '@wagmi/chains'
+import { arbitrum, arbitrumGoerli, baseGoerli, gnosis, goerli, hardhat, mainnet, optimism, optimismGoerli, polygon, sepolia } from '@wagmi/chains'
 import { configureChains } from 'wagmi'
 import { alchemyProvider } from 'wagmi/providers/alchemy'
 import { infuraProvider } from 'wagmi/providers/infura'
@@ -18,7 +18,7 @@ baseGoerli.iconUrl = '/icons/NetworkBaseTest.svg'
 
 export const ETH_CHAINS_TEST = [goerli, sepolia, hardhat]
 export const ETH_CHAINS_L2_TEST = [baseGoerli, optimismGoerli, arbitrumGoerli]
-export const ETH_CHAINS_PROD = [mainnet, optimism, arbitrum, polygon, goerli, baseGoerli]
+export const ETH_CHAINS_PROD = [mainnet, optimism, arbitrum, polygon, goerli, baseGoerli, gnosis]
 
 export const CHAINS = process.env.NODE_ENV === 'production' ? ETH_CHAINS_PROD : [...ETH_CHAINS_TEST, ...ETH_CHAINS_L2_TEST]
 

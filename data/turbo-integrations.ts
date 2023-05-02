@@ -56,4 +56,12 @@ export const turboIntegrations = {
     imgLight: '/integrations/lit-protocol.svg',
     imgDark: '/integrations/lit-protocol.svg',
   },
+  requestNetwork: {
+    name: 'Request Network',
+    href: '/integration/request-network/requests',
+    url: 'https://request.network/',
+    description: 'Request is infrastructure for creating and paying payment requests.',
+    imgLight: '/integrations/request-network.svg',
+    imgDark: '/integrations/request-network.svg',
+  },
 }
